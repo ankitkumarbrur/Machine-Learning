@@ -5,10 +5,12 @@ from sklearn import metrics
 import matplotlib.pyplot as plt
 
 iris = load_iris()
+
 X = iris.data
 Y = iris.target
-X_train, X_test, y_train, y_test = train_test_split(
-    X, Y, test_size=0.95, random_state=1)
+
+X_train, X_test, y_train, y_test = train_test_split( X, Y, test_size=0.95, random_state = 1)
+
 gnb = GaussianNB()
 y_pred = gnb.fit(X_train, y_train).predict(X_test)
 
