@@ -1,0 +1,1 @@
+print('Final cost/MSE:  {:0.3f}'.format(cost_history[-1]))
